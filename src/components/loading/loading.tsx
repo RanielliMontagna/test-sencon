@@ -1,6 +1,6 @@
-import { CircularProgress } from "@mui/material";
-import { memo } from "react";
-import { Backdrop } from "./loading.styles";
+import { memo } from 'react';
+import { CircularProgress } from '@mui/material';
+import { Backdrop } from './loading.styles';
 
 const Loading = () => (
   <Backdrop>

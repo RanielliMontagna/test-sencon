@@ -5,3 +5,26 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+
+  @media (max-width: 576px) {
+    width: 5px;
+    height: 5px;
+  }
+}
+
+*::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #8B8B8B90;
+  border-radius: 100px; 
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #8B8B8B; 
+}
