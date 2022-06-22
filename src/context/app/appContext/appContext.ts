@@ -1,5 +1,5 @@
-import { createContext } from "react";
-import { IAppContext } from "./appContext.types";
+import { createContext } from 'react';
+import type { IAppContext } from './appContext.types';
 
 const AppContext = createContext({} as IAppContext);
 

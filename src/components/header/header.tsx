@@ -1,5 +1,5 @@
-import { memo } from "react";
-import * as styled from "./header.styles";
+import { memo } from 'react';
+import * as styled from './header.styles';
 
 const Header = () => {
   return (

@@ -1,5 +1,5 @@
-import { VariantType } from "notistack";
-import { Dispatch, SetStateAction } from "react";
+import { VariantType } from 'notistack';
+import { Dispatch, SetStateAction } from 'react';
 
 export type IToggleSnackbar = {
   mensagem: string;

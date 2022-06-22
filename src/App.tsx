@@ -1,7 +1,7 @@
-import { SnackbarProvider } from "notistack";
+import { SnackbarProvider } from 'notistack';
 
-import Routes from "routes/routes";
-import AppProvider from "context/app/appProvider/appProvider";
+import Routes from 'routes/routes';
+import AppProvider from 'context/app/appProvider/appProvider';
 
 const App = () => {
   return (

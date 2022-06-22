@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { corPrimaria, corSecundaria } from "styles";
+import styled from 'styled-components';
+import { corPrimaria, corSecundaria } from 'styles';
 
 export const DivExterna = styled.div`
   display: flex;
