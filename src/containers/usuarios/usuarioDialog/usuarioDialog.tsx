@@ -1,7 +1,6 @@
 import type { IUsuarioDialog } from './usuarioDialog.types';
 
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@mui/material';
-import React from 'react';
 
 const UsuarioDialog = ({ open, handleClose, usuario }: IUsuarioDialog) => {
   const _montarLinha = (titulo: string, valor?: any) => {
@@ -22,7 +21,7 @@ const UsuarioDialog = ({ open, handleClose, usuario }: IUsuarioDialog) => {
         <ul style={{ listStyle: 'none' }}>
           {_montarLinha('Indíce', usuario?.index)}
           {_montarLinha('Id', usuario?.id)}
-          {_montarLinha('Username', usuario?.nome)}
+          {_montarLinha('Username', usuario?.username)}
           {_montarLinha('Email', usuario?.email)}
         </ul>
       </DialogContent>

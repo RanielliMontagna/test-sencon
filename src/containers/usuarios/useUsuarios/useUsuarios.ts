@@ -33,9 +33,10 @@ const useUsuarios = () => {
         const usuariosTratados = response.map((usuario: IUsuario, index: number) => ({
           id: usuario.id,
           nome: usuario.name,
+          username: usuario.username,
           email: usuario.email,
           telefone: usuario.phone,
-          endereco: `${usuario.address.street}, ${usuario.address.suite}`,
+          endereco: `${usuario.address.street}, ${usuario.address.suite} ${usuario.address.zipcode}`,
           cidade: usuario.address.city,
           empresa: _logicaMostrarEmpresa(index),
         }));

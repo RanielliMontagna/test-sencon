@@ -36,6 +36,7 @@ export interface IUsuarioTratado {
   endereco: string;
   cidade: string;
   empresa: string;
+  username: string;
 }
 
 export type KeysColunasType = 'nome' | 'email' | 'telefone' | 'endereco' | 'cidade' | 'empresa';
