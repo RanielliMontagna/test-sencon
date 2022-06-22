@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
+import * as Sentry from '@sentry/react';
 
 import type { IUsuario, IUsuarioTratado } from '../usuarios.types';
 import type { IUsuarioDialogState } from '../usuarioDialog/usuarioDialog.types';
@@ -46,6 +47,7 @@ const useUsuarios = () => {
         setLoading(false);
       }
     } catch (err: any) {
+      Sentry.captureException(err);
       setLoading(false);
       toggleSnackbar({
         mensagem: err?.message ?? 'Erro ao buscar usuários!',
