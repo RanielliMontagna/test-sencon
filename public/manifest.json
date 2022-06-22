@@ -18,8 +18,11 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "https://test-sencon.vercel.app/",
+  "orientation": "portrait",
+  "lang": "pt-BR",
   "display": "standalone",
   "theme_color": "#017EFF",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "prefer_related_applications": false
 }
