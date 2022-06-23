@@ -32,7 +32,10 @@ const Usuarios = () => {
                     const value = usuario[column.key];
 
                     return (
-                      <TableCell key={column.key} style={{ whiteSpace: 'nowrap' }}>
+                      <TableCell
+                        title='Clique para ver mais informações do usuário'
+                        key={column.key}
+                        style={{ whiteSpace: 'nowrap' }}>
                         {value ?? '-'}
                       </TableCell>
                     );

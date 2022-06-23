@@ -29,6 +29,7 @@ Para o desenvolvimento do Front-End do projeto foi utilizada a linguagem [REACT]
 - [Material UI](https://mui.com/pt/): Biblioteca de componentes e ferramentas que simplifica e agiliza o desenvolvimento de aplicações para Web.
 - [Styled-Components](https://styled-components.com/): Biblioteca que facilita a utilização do css para estilizar seus projetos.
 - [Sentry](https://sentry.io/): Plataforma para trackeamento e monitoramento de erros.
+- [Vercel](https://vercel.com/): Plataforma para a hospedagem de sites estáticos e aplicações que utilizam frameworks front-end
 
 ## Extras
 
@@ -76,6 +77,6 @@ $ yarn start
 
 ## Link de demonstração
 
-[https://test-sencon.vercel.app/](https://test-sencon.vercel.app/): Hospedado na [Vercel](https://vercel.com/).
+[https://test-sencon.vercel.app/](https://test-sencon.vercel.app/)
 
 ### Feito com ❤ by Ranielli Montagna
