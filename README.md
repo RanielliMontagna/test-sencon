@@ -1,46 +1,81 @@
-# Getting Started with Create React App
+# Desafio técnico para desenvolvedores
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<ul>
+    <li>Você deverá criar um novo projeto em React de preferência em typescript</li>
+    <li>Você deverá realizar um request para o endpoint</li>
+    <li>Com a resposta do endpoint, monte uma tabela igual a mostrada no link de demonstração.</li>
+    <li>Para a coluna de empresa, você deverá realizar a seguinte lógica:<br/>
+    Ao invés de mostrar a empresa recebida na repsosta, monte uma lógica em que:
+    <ul>
+    <li>caso o índice for divisível por 3, mostre a palavra "TC"</li>
+    <li>caso o índice for divisível por 5, mostre a palavra "SENCON"</li>
+    <li>caso o índice for divisível por 3 e 5, mostre a palavra "TC / SENCON"</li>
+    <li>caso o índice não seja dívisivel por 3 e 5, mostre a palavra "Sem empresa"</li>
+    </ul>
+    </li>
+    <li>Ao clicar em uma das linhas da tabela, deverá abrir uma modal aonde deverá ser mostrado o username, id e o índice da respectiva linha.</li>
+    <li>Sinta-se a vontade para adicionar mais coisas.</li>
 
-## Available Scripts
+</ul>
 
-In the project directory, you can run:
+# Implementação
 
-### `yarn start`
+## Ferramentas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Para o desenvolvimento do Front-End do projeto foi utilizada a linguagem [REACT](https://pt-br.reactjs.org/) com as seguintes ferramentas:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Typescript](https://www.typescriptlang.org/): Linguagem fortemente tipada baseada em JavaScript.
+- [React Route](https://reactrouter.com/): Sistema de roteamente utilizado no React.
+- [Material UI](https://mui.com/pt/): Biblioteca de componentes e ferramentas que simplifica e agiliza o desenvolvimento de aplicações para Web.
+- [Styled-Components](https://styled-components.com/): Biblioteca que facilita a utilização do css para estilizar seus projetos.
+- [Sentry](https://sentry.io/): Plataforma para trackeamento e monitoramento de erros.
 
-### `yarn test`
+## Extras
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Foram utilizados no projeto também, que vale ser ressaltado e explicado:
 
-### `yarn build`
+- Service-Worker: Para a criação e utilização do site em formato de PWA (Progressive web app)
+- Meta-Tags do Facebook: Utilizado para otimizar o compartilhamento do site nas redes sociais.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Como acessar/executar o projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para executar o projeto localmente, você deve primeiro clonar o projeto usando:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+$ git clone https://github.com/RanielliMontagna/test-sencon.git
+```
 
-### `yarn eject`
+Após ter clonado o projeto você precisará criar um arquivo `.env` na raiz do projeto, esse arquivo irá conter as mesmas chaves e valores do `.env.example`.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Após ter criado o arquivo `.env` você deverá rodar o comando abaixo:
+(É necessário para instalar todas dependências e pacotes que são utilizados no projeto).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+$ npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+ou
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+$ yarn
+```
 
-## Learn More
+### Utilizando
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para você iniciar o projeto você deverá rodar o comando
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+$ npm start
+```
+
+ou
+
+```bash
+$ yarn start
+```
+
+## Link de demonstração
+
+[https://test-sencon.vercel.app/](https://test-sencon.vercel.app/): Hospedado na [Vercel](https://vercel.com/).
+
+### Feito com ❤ by Ranielli Montagna
